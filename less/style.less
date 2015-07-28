@@ -1,0 +1,276 @@
+@import 'variables';
+
+* {
+	font-family: @fontfamily;
+}
+
+body {
+	background-color: @background;
+	padding: 0;
+	margin: 0;
+	color: @body-text;
+}
+
+strong {
+	font-weight: @title-weight;
+	color: @body-text;
+}
+
+h1 {
+	padding: 5px;
+}
+
+h2 {
+	padding: 5px;
+	font-size: 40px;
+}
+
+h3 {
+	padding: 5px;
+	font-weight: 400;
+}
+
+a {
+	text-decoration: none;
+	color: @body-text;
+	font-size: 12px;
+	&:hover {
+		color: @gray;
+	}
+}
+ 
+.top-nav {
+	position: fixed;
+	top: 0;
+ 	width: 100%;
+  	height: 45px;
+  	background-color: @white;
+  	padding: 0px 20px 0px 30px;
+  	z-index: 999;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+	color: @body-text;
+	font-weight: @body-weight;
+	font-size: @body-size;
+	line-height: 20px;
+		h1 {
+			text-transform: uppercase;
+			font-size: 14px;
+			width: 120px;
+			float: left;
+			margin: 0;
+			line-height: 45px;
+			padding: 0;
+			letter-spacing: 0.5px;
+		}
+		ul {
+			list-style: none;
+			padding: 0;
+			height: 45px;
+			margin: 0;
+			line-height: 45px;
+			li {
+				display: inline;
+				text-transform: uppercase;
+				padding: 14px;
+				font-size: 14px;
+				letter-spacing: 0.5px;
+				&:hover {
+					background-color: #f1f1f2;
+				}
+				a {
+					color: @body-text;
+					&:hover {
+						color: @body-text;
+					}
+				}
+			}
+		}
+}
+
+.activeState {
+	// background-color: #f1f1f2;
+	padding: 15px 0;
+	// color: #9e9e9e;
+	border-bottom: 3px solid #9e9e9e;
+}
+
+.links {
+	padding-top: 45px;
+	float: left;
+	width: 240px;
+	ul {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		color: @link-color;
+		font-weight: @body-weight;
+		font-size: @link-size;
+	}
+
+	a {
+		font-size: 13px;
+		color: @link-color;
+		line-height: 40px;
+		display: block;
+		background-color: @white;
+		padding: 5px 30px 5px 10px;
+		opacity: 1;
+		transition: opacity .25s ease-in-out;
+		-moz-transition: opacity .25s ease-in-out;
+		-webkit-transition: opacity .25s ease-in-out;
+			&:hover {
+				opacity: 0.5;
+			}
+		span {
+			margin-left: 20px;
+		}
+	}
+}
+
+.intro {
+	padding-top: 80px;
+	width: 100%;
+	height: 20%;
+	background-color: #fff;
+	h2 {
+		text-align: center;
+		margin: 0;
+		padding-top: 30px;
+	}
+	h3 {
+		text-align: center;
+		margin: 0;
+		font-size: 16px;
+	}
+}
+
+.wrapper {
+  	padding-top: 60px;
+ 	padding-left: 20px;
+  	max-width: 1700px;
+	.box {
+		float: left;
+		margin-left: 10px;
+		margin-bottom: 10px;
+		width: 330px;
+		height: 300px;
+		// box-shadow: 1px 1px 4px @gray;
+		&:hover {
+			opacity: 0.8;
+		}
+		.content {
+			height: 230px;
+			background-color: #ccc;
+		}
+		.video {
+			background-color: #999;
+		}
+		.discovery {
+			background: url("../images/discovery/front.png") no-repeat center;
+			background-size: cover;
+		}
+		.recommends {
+			background: url("../images/recommends/front.png") no-repeat center;
+			background-size: cover;
+		}
+		.fresh {
+			background: url("../images/fresh/front.png") no-repeat center;
+			background-size: cover;
+		}
+		.magazines {
+			background: url("../images/magazines/front.png") no-repeat center;
+			background-size: cover;
+		}
+
+		.video {
+			background: url("../images/video-publishing/front.png") no-repeat center;
+			background-size: cover;
+		}
+
+		.dota {
+			background: url("../images/dota2/front.png") no-repeat center;
+			background-size: cover;
+		}
+		.card {
+			// height: 65px;
+			// width: 330px;
+			background-color: @white;
+			.text {
+				padding: 10px;
+				project {	
+					font-size: @title-size;
+					color: @label;
+					font-weight: @super-bold-weight;
+					// padding: 20px;
+					width: 100%;
+					display: block;
+					padding-bottom: 5px;
+				}
+				subcaption {
+					font-size: @caption-size;
+					font-weight: @caption-weight;
+					width: 100%;
+					color: @label;
+					// text-transform: uppercase;
+				}
+			}
+		}
+	}
+}
+
+
+.previousnext {
+	float: right;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	.previous {
+		padding-right: 10px;
+	}
+}
+
+
+.internal-wrapper {
+	padding-left: 30px;
+	padding-top: 70px;
+ 	height: 1000px;
+ 	width: 80%;
+ 	float: left;
+ 	h1 {
+ 		text-transform: uppercase;
+ 		font-size: 22px;
+ 		letter-spacing: 1px;
+ 		&.title {
+			font-size: 10px;
+			text-align: right;
+		}
+ 	}
+ 	p {
+ 		padding: 5px;
+ 	}
+}
+
+.responsive-image {
+	width: 100%;
+	box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12);
+	background-color: @white;
+	margin-bottom: 20px;
+}
+
+
+// responsive media queries
+
+@media (max-width: 400px) {
+    .wrapper {
+        padding: 0;
+        margin-top: 65px;
+    }
+    .wrapper .box {
+        margin: 0 auto;
+        float: none;
+    }
+    .internal-wrapper {
+	    h1 { 
+	  	    font-size: 15px;
+	    }
+	}
+}
