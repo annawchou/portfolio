@@ -9,7 +9,7 @@ gulp.task('less', function () {
   return gulp.src('./less/**/*.less')
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ],
-      plugins: [/*cleancss*/]
+      plugins: [cleancss]
     }))
     .pipe(gulp.dest('./css'));
 });
