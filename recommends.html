@@ -1,46 +1,70 @@
 <html>
     <head>
         <title>Anna Chou's Portfolio</title>
-        <link rel="stylesheet/less" type="text/css" href="less/style.less" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" type="img/png" href="images/favicon.ico">
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
           ga('create', 'UA-36888080-1', 'auto');
           ga('send', 'pageview');
-
         </script>
     </head>
         <div class="top-nav">
-            <a href="index.html"><h1>anna chou</h1></a>
-            <ul>
-                <a href="index.html"><li>work</li></a>
-                <!-- <a href="#"><li>profile</li></a>
-                <a href="#"><li>resume</li></a> -->
-                <a href="https://www.linkedin.com/in/annanapup" target="_blank"><li>linkedin</li></a>
-               <!--  <a href="#"><li>github</li></a> -->
-            </ul>
+            <div class="nav-wrapper">
+                <a href="index.html"><h1>anna chou</h1></a>
+                <ul>
+                    <a class="activeState" href="index.html"><li><div>work</div></li></a>
+                    <a href="profile.html"><li><div>Profile</div></li></a>
+                </ul>
+                <div class="previousnext">
+                    <a class="previous" href="fresh.html"><img src="images/arrow-right.png" width="28"/></a>
+                    <a class="next" href="magazines.html"><img src="images/arrow-left.png" width="28"/></a>
+                </div>
+            </div>
         </div>
 
     <body>
         <div class="internal-wrapper">
-            <div class="previousnext"><a class="previous" href="video-publishing.html">previous</a></div>
-            <img class="responsive-image" src="images/recommends/cover.png" />
-            <h1 class="title">Yahoo Recommends</h1>
-            <!--  <h1>Wireframes</h1> -->
-            <!-- <h1>Physical</h1> -->
+            <img class="responsive-image" src="images/recommends/header.png" />
+            <img class="responsive-image" src="images/recommends/splash2.gif" />
             <h1>Site Map</h1>
-            <img class="responsive-image" src="images/recommends/sitemap.png" />
-            <h1>Final Design</h1>
+            <img class="responsive-image" src="images/recommends/main-sitemap.png" />
+            <img class="responsive-image" src="images/recommends/architecture-sitemap-overview.png" />
+            <img class="responsive-image" src="images/recommends/nav-roles.png" />
+            <h1>Physical</h1>
+            <img class="responsive-image" src="images/recommends/sketches.png" />
+            <img class="responsive-image" src="images/recommends/grid.png" />
+             <h1>Wireframes / Explorations</h1>
+            <img class="responsive-image" src="images/recommends/desktop-wires.png" />
+            <img class="responsive-image" src="images/recommends/nav.png" />
+            <h1>Publishing Style Guide</h1>
+            <img class="responsive-image" src="images/recommends/style.png" />
+            <h1>Usability Testing</h1>
+            <!-- <p>Problem: User wanted to see a preview of the module they are making. Solution: I added a preview of the module to the bottom of the site. Comparision of before and after</p>
+            <div class="placeholder"><h3>Previewing a new module</h3></div>
+
+            <p>Problem: User had trouble navigating through module creation. Solution: I had redesigned the navigation so that it would be more obvious what flow user needs to go through. Comparision of before and after</p>
+            <div class="placeholder"><h3>Creating a new module</h3></div>
+
+            <p>Problem: Onboarding flow was confusing for user. User did not know which step they were on or how long the onboarding process wuold be. Solution: I had added clear wizard steps at the top of the site so user was not lost. User could also exit anytime and come back to finish after they had passed the account creation. Comparision of before and after</p>
+            <div class="placeholder"><h3>Onboarding flow</h3></div> -->
+
+            <p>Problem: Splash page was not clear enough that users were not sure what service we were providing. Solution: I had added illustrations to show what sort of technology we would be offering to the user and some bullet points as to how we would help with user engagement. Comparision of before and after</p>
+            <img class="responsive-image" src="images/recommends/splash-test.png" />
+            <h1>iOS</h1>
+            <img class="responsive-image" src="images/recommends/ios.png" />
+            <img class="responsive-image" src="images/recommends/ios2.png" />
+            <h1>Android</h1>
+            <img class="responsive-image" src="images/recommends/android.png" />
+            <h1>Desktop</h1>
             <img class="responsive-image" src="images/recommends/1.png" />
             <img class="responsive-image" src="images/recommends/2.png" />
             <img class="responsive-image" src="images/recommends/3.png" />
             <img class="responsive-image" src="images/recommends/4.png" />
-            <img class="responsive-image" src="images/recommends/5.png" />
         </div>
     </body>
 </html>

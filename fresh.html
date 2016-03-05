@@ -1,36 +1,34 @@
 <html>
     <head>
         <title>Anna Chou's Portfolio</title>
-        <link rel="stylesheet/less" type="text/css" href="less/style.less" />
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/1.7.3/less.min.js"></script>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script>
           (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
           (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
           m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
           ga('create', 'UA-36888080-1', 'auto');
           ga('send', 'pageview');
-
         </script>
     </head>
         <div class="top-nav">
-            <a href="index.html"><h1>anna chou</h1></a>
-            <ul>
-                <a href="index.html"><li>work</li></a>
-                <!-- <a href="#"><li>profile</li></a>
-                <a href="#"><li>resume</li></a> -->
-                <a href="https://www.linkedin.com/in/annanapup" target="_blank"><li>linkedin</li></a>
-               <!--  <a href="#"><li>github</li></a> -->
-            </ul>
+            <div class="nav-wrapper">
+                <a href="index.html"><h1>anna chou</h1></a>
+                <ul>
+                    <a class="activeState" href="index.html"><li><div>work</div></li></a>
+                    <a href="profile.html"><li><div>Profile</div></li></a>
+                </ul>
+                <div class="previousnext">
+                    <a class="previous" href="finance.html"><img src="images/arrow-right.png" width="28"/></a>
+                    <a class="next" href="recommends.html"><img src="images/arrow-left.png" width="28"/></a>
+                </div>
+            </div>
         </div>
 
     <body>
         <div class="internal-wrapper">
-            <div class="previousnext"><a class="next" href="discovery.html">next project</a></div>
-            <img class="responsive-image" src="images/fresh/fresh-cover.png" />
-            <h1 class="title">Fresh: Ecommerce and Community</h1>
+            <img class="responsive-image" src="images/fresh/header2.png" />
             <h1>Wireframes</h1>
             <img class="responsive-image" src="images/fresh/1.png" />
             <img class="responsive-image" src="images/fresh/2.png" />
@@ -40,18 +38,39 @@
             <img class="responsive-image" src="images/fresh/4d.png" />
             <img class="responsive-image" src="images/fresh/5d.png" />
             <img class="responsive-image" src="images/fresh/6d.png" />
+            <h1>Competitive Analysis</h1>
+            <p>My team and I conducted several competitive analyses. We looked at websites such as Etsy, Vegetarian Times, Fab, and Joyus to see what worked and didn't work.</p>
+            <img class="responsive-image" src="images/fresh/analysis.png"/>
             <h1>Physical</h1>
+            <p>Before creating a final sitemap, we did a first take on defining the architecture of our product as well as each experience user flow.</p>
             <img class="responsive-image" src="images/fresh/dev.jpg" />
             <img class="responsive-image" src="images/fresh/dev2.jpg" />
+            <p>Quick wireframes that were set up for a critique.</p>
             <img class="responsive-image" src="images/fresh/dev3.jpg" />
             <h1>Site Map</h1>
-            <img class="responsive-image" src="images/fresh/3b.png" />
-            <h1>Final Design</h1>
+            <p>This was our final sitemap that defined our product. We broke down our product into Marketplace, Recipes, and Community. We had also included other important interation functions such as search, advanced search, grocery list, shopping cart, and user profile. This was used for both web and native.</p>
+            <img class="responsive-image" src="images/fresh/sitemap.jpg" />
+            <img class="responsive-image" src="images/fresh/sitemap2.jpg" />
+
+            <h1>iOS</h1>
+            <img class="responsive-image" src="images/fresh/ios2.gif" />
+           <!--  <div class="placeholder"><h3>Add iOS screens: profile, notifications, sidebar nav</h3></div> -->
+            <h1>Android</h1>
             <img class="responsive-image" src="images/fresh/4.png" />
             <img class="responsive-image" src="images/fresh/5.png" />
             <img class="responsive-image" src="images/fresh/6.png" />
             <img class="responsive-image" src="images/fresh/7.png" />
+            <h1>Tablet</h1>
             <img class="responsive-image" src="images/fresh/8.png" />
+            <h1>Desktop</h1>
+            <img class="responsive-image" src="images/fresh/desktop.png" />
+        </div>
+
+
+<!--         <div class="project-info">
+            <h1 class="title">Fresh: E-commerce and Community</h1>
+            <h1>Project Description</h1>
+            <p>My team and I wanted to create and design an entire end-to-end experience around a community that currently exists in our world; food lovers. The problem we were solving was the fact that it was difficult for people in the food community to buy and sell their own personal food products in a safe way. Our product first connected the people in the community on a platform where people can begin to earn trust as well as create an identity that people trusted.</p><p>We designed an entire flow of how a user sets up an account, profile, and the ability to purchase goods. We also expanded the product to include recipes and the ability to view, save, and add the ingredients of the recipe to a shopping cart. We then also added a third component to our product called 'Community' where people can reach out to eachother and chat, share, and discuss about food and recipes. We felt that 'Community' was the most important component to piece the recipe and marketplaces together. This was how users understood where they would purchase their goods. Sellers would have to create good reputation in order to make business through the community.</p>
         </div>
     </body>
 </html>

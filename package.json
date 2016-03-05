@@ -1,0 +1,27 @@
+{
+  "name": "work",
+  "private": true,
+  "version": "0.0.0",
+  "description": "Proto",
+  "main": " ",
+  "scripts": {
+    "start": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/annawchou/work.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/annawchou/work/issues"
+  },
+  "homepage": "https://github.com/annawchou/work",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-less": "^3.0.5",
+    "gulp-watch": "^4.3.5",
+    "gulp-shell": "^0.5.2",
+    "less-plugin-clean-css": "^1.5.1"
+  }
+}
