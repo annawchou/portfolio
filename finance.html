@@ -1,4 +1,4 @@
- <html>
+<html>
     <head>
         <title>Anna Chou's Portfolio</title>
         <link rel="stylesheet" type="text/css" href="css/style.css" />
@@ -13,6 +13,7 @@
           ga('send', 'pageview');
         </script>
     </head>
+
         <div class="top-nav">
             <div class="nav-wrapper">
                 <a href="index.html"><h1>anna chou</h1></a>
@@ -21,86 +22,79 @@
                     <a href="profile.html"><li><div>Profile</div></li></a>
                 </ul>
                 <div class="previousnext">
-                    <a class="previous" href="magazines.html"><img src="images/arrow-right.png" width="28"/></a>
+                    <a class="previous" href="charts.html"><img src="images/arrow-right.png" width="28"/></a>
                     <a class="next" href="fresh.html"><img src="images/arrow-left.png" width="28"/></a>
                 </div>
             </div>
         </div>
 
     <body>
+        <video class="responsive-image space" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/live-header-part-1.mp4"></video>
+        <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/live-header-part-2.mp4"></video>
+        <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/live-header-part-3.mp4"></video>
+
         <div class="internal-wrapper">
-            <img class="responsive-image" src="images/finance/header.png"/>
-            <h1>Product Information</h1>
-            <div class="product-info">
-                <p>Yahoo Finance is one of the top 3 financial sites on the web with over 5 million unique users each day.</p>
-                <p>I am lead UI/UX designer for the Yahoo finance native iOS and android platforms. I am also lead designer for watchlist, portfolios, and holdings interactions on desktop and lead UX for mobile web.</p>
-                <p>The primary product goal for desktop was to allow users to find and discover information about the stock market. For our native apps, our goal was to allow users to have an app that saved their holdings/shares information and watchlists. My team and I had done a lot of design revamps to better the experience for our users. We had daily product and design check-ins and had done user researching very frequently. This allowed us to figure out what features needed to be improved and what features we should add for our users. This created our product roadmap and we had seen many improvements in our interactions overtime.</p>
-            </div>
-            <h1 class="clear">Architecture</h1>
-            <img class="responsive-image" src="images/finance/native-sitemap.png"/>
-            <img class="responsive-image" src="images/finance/native-mindmap.png"/>
-            <img class="responsive-image" src="images/finance/desktop-mindmap.png"/>
-            <h1>Process</h1>
-            <img class="responsive-image" src="images/finance/sketches.png"/>
+            <img class="responsive-image" src="images/finance/finance-logo.png"/>
+            <img class="responsive-image" src="images/finance/product-goals.png"/>
+
+            <h1 class="clear">Understanding app architecture</h1>
+            <p>Laying out what users are seeing today as a holistic system and figuring out ways to improve experience.</p>
+            <img class="responsive-image" src="images/finance/finance-architecture.png"/>
+            <h1>Framing the problems</h1>
+            <p>Understanding who our users are and what problems we should be solving for them.</p>
             <img class="responsive-image" src="images/finance/whiteboard.png"/>
-            <img class="responsive-image" src="images/finance/whiteboard1.png"/>
+            <!-- <img class="responsive-image" src="images/finance/whiteboard1.png"/> -->
             <img class="responsive-image" src="images/finance/whiteboard2.png"/>
             <img class="responsive-image" src="images/finance/whiteboard3.jpg"/>
+            <img class="responsive-image" src="images/finance/whiteboard4.jpg"/>
 
-            <h1>Wireframes</h1>
-            <p>We gave the user the ability to delete inline as well as set custom alerts for specific tickers they wanted.</p>
-            <img class="responsive-image" src="images/finance/wireframe.png"/>
-            <p>We had done variations of what the switch would be between the two different lots and holdings view. Holdings was a new feature.</p>
+            <h1>Devising solutions for each feature</h1>
+            <p>We gave user the ability to delete inline and set custom alerts for specific tickers they wanted.</p>
+            <img class="responsive-image" src="images/finance/wireframe1.png"/>
+            <p>We explored different UI approaches for how users would access their holdings view.</p>
             <img class="responsive-image" src="images/finance/wireframe2.png"/>
-            <p>The ability to add a new lot or edit an existing lot was a new feature.</p>
+            <p>The ability to add a new lot or edit an existing lot was a new feature since we added the holdings view.</p>
             <img class="responsive-image" src="images/finance/wireframe3.png"/>
 
-            <h1>Iterations</h1>
-            <p>2015 Q3</p>
-            <img class="responsive-image" src="images/finance/iphone-iteration.png"/>
-            <img class="responsive-image" src="images/finance/android-iteration.png"/>
-            <img class="responsive-image" src="images/finance/android-finance-sketch.png"/>
+            <h1>Dogfood versioning &#38; Bucket testing</h1>
+            <p>We did multiple a/b testing with different designs - using metrics to help validate our directions.</p>
+            <img class="responsive-image" src="images/finance/bucket-1.png"/>
+            <img class="responsive-image" src="images/finance/bucket-2.png"/>
 
-            <h1>Specs</h1>
-            <img class="responsive-image" src="images/finance/specs.png"/>
-            <p>2015 Grid</p>
-            <img class="responsive-image" src="images/finance/finance-qsp-responsive.png"/>
-            <p>Desktop and Device Web Responsive Grid</p>
-            <img class="responsive-image" src="images/finance/desktop-specs.png"/>
-            <img class="responsive-image" src="images/finance/specs3.png"/>
-            <p>Feature Module Interaction Pattern</p>
-            <img class="responsive-image" src="images/finance/hero-specs.png"/>
-            
-            <h1>Usability Testing</h1>
-            <p>Problem: Users did not see the ability to view 'All Watchlists'. Solution: We tried a different UI treatment to make 'All Watchlist' different from the rest of the user-created watchlists. This is the before and after comparison mock.</p>
-            <img class="responsive-image" src="images/finance/selector-study.png"/>
-            <p>Problem: Users had trouble editing their watchlists. Solution: We decided to add the settings in the watchlist selector. Users kept going there to see if they could delete/add/reorder their watchlists. This is the before and after comparison mock.</p>
-            <img class="responsive-image" src="images/finance/selector-study2.png"/>
+            <h1>High-fidelity &#38; Prototyping</h1>
+            <p>Illustrating the approaches through visual design &#38; rapid prototyping.</p>
+            <img class="responsive-image" src="images/finance/sketch.png"/>
+            <img class="responsive-image" src="images/finance/prototype.png"/>
+
+            <h1>User Research &#38; Iterating</h1>
+            <p><strong class="feature">Feature Request:</strong> Users wanted the ability to add multiple lists and holdings.<br /><strong class="solution">Solution:</strong> We added a holdings view and a multiple watchlist view.</p>
+            <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/study1.mp4"></video>
+            <p><strong class="problem">Problem:</strong> Then users were not able to find the holdings view because the toggle was too small. <br /><strong class="solution">Solution:</strong> We changed the label to "Basic" and "Details" and made the toggle larger.</p>
+            <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/study2.mp4"></video>
+            <p><strong class="feature">Feature Request:</strong> Users wanted to be able to see more market indicies while researching other quotes.<br /><strong class="solution">Solution:</strong> Our team did a hack-a-thon to introduce a market index carousel in the header.</p>
+            <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/study4.mp4"></video>
+            <p><strong class="feature">Feature Request:</strong> We wanted users to stay engaged longer on our article pages.<br /><strong class="solution">Solution:</strong> We updated video to have picture-in-picture.</p>
+            <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/study3.mp4"></video>
+
+            <h1>Exhausting all ways of user researching</h1>
+            <p>Together as a team we were able to list out common themes by gathering data through surveys, beta testing, diary studies, and interviewing.</p>
             <img class="responsive-image" src="images/finance/study.png"/>
-            <h1>iOS</h1>
-            <img class="responsive-image" src="images/finance/ios1.png"/>
-            <img class="responsive-image" src="images/finance/ios2.gif"/>
-<!--             <img class="responsive-image" src="images/finance/onboarding.png"/>
-            <img class="responsive-image" src="images/finance/onboarding2.png"/> -->
-            <img class="responsive-image" src="images/finance/ipad.png"/>
-            <img class="responsive-image" src="images/finance/ipad2.png"/>
-            <img class="responsive-image" src="images/finance/ipad3.png"/>
-            <h1>Android</h1>
-            <img class="responsive-image" src="images/finance/android.gif" />
-            <img class="responsive-image" src="images/finance/android2.gif" />
-            <img class="responsive-image" src="images/finance/android3.gif" />
 
-            <h1>Desktop</h1>
-            <img class="responsive-image" src="images/finance/desktop.png"/>
-            <img class="responsive-image" src="images/finance/desktop2.png"/>
+            <h1>Implementation &#38; Specs</h1>
+            <img class="responsive-image" src="images/finance/specs-2016-grid.png"/>
+            <img class="responsive-image" src="images/finance/specs-stream.png"/>
+            <img class="responsive-image" src="images/finance/specs-new-stream.png"/>
+            <img class="responsive-image" src="images/finance/specs-hero.png"/>
+            <h1>Engineering, Design, &#38; Product source of truth</h1>
+            <p>For a project at this scale, organization and transparency is key to successful implementation.</p>
+            <video class="responsive-image" ccontrols="false" width="100%" autoplay="true" name="Video Name" loop="true" src="images/finance/zeplin1.mp4"></video>
 
-            <h1>Team</h1>
-            <img class="responsive-image" src="images/finance/team.png"/>
-            <img class="responsive-image" src="images/finance/design-team.jpg"/>
+            <h1>The people behind Yahoo Finance</h1>
+            <img class="responsive-image" src="images/finance/people-design.jpg"/>
             <p>Sunnyvale</p>
-            <img class="responsive-image" src="images/finance/sunnyvale-finance.png"/>
+            <img class="responsive-image" src="images/finance/people-snv.png"/>
             <p>New York</p>
-            <img class="responsive-image" src="images/finance/newyork-finance.png"/>
-        </div>
+            <img class="responsive-image" src="images/finance/people-ny.png"/>
+        </div>}
     </body>
 </html>
