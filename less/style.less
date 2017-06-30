@@ -243,8 +243,7 @@ ul {
 
 .container {
    background-color: #fff;
-   max-width: 800px;
-   padding: 20px 20px 20px 20px;
+   max-width: 1000px;
    margin: 10px auto;
 }
 
@@ -259,8 +258,7 @@ ul {
         -webkit-transition-property: box-shadow, transform;
         -webkit-transition-duration: 0.3s;
         &:hover {
-        transform: scale(0.97);/*
-        box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);*/
+        transform: scale(0.97);
         }  
 
         .content {
@@ -426,7 +424,7 @@ ul {
    }
 
    .internal-wrapper {
-      width: 60%;
+      width: 1200px;
    }
 }
 
@@ -440,26 +438,33 @@ ul {
    }
 }
 
-
-@media (max-width: 1200px) {
+@media (max-width: 850px) {
    .wrapper {
       .box {
-         margin-bottom: 0;
+         .content {
+            height: 270px;
+         }
       }
    }
-
-   .nav-wrapper {
-      width: 95%;
-   }
-
-   .internal-wrapper {
-      width: 80%;
-      padding: 45px 0 0 0;
-   }
-
 }
 
-@media (max-width: 850px) {
+@media (max-width: 750px) {
+   .flex-cell {
+      min-width: 100%;
+      flex: 1 1 100%;
+   }
+
+   .wrapper {
+      .box {
+         .content {
+            height: 400px;
+         }
+      }
+   }
+}
+
+
+@media (max-width: 530px) {
 
    .flex-layout {
       padding: 0;
@@ -473,18 +478,18 @@ ul {
 
     .wrapper {
         padding-top: 25px;
-        margin-top: 20px;
-        .box {
-         margin: 0 auto 20px;
-         float: none;
-         .content {
-            height: 290px;
-         }
+        margin-top: 40px;
+            .box {
+            margin: 0 auto 20px;
+            float: none;
+            .content {
+            height: 250px;
+             }
         }
     }
 
     .link {
-      width: 283px;
+      width: 313px;
     }
 
    .nav-wrapper {
