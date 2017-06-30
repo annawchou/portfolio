@@ -303,7 +303,7 @@ ul {
          height: 100%;
          background-color: #EFF8FE;
       }
-      
+
       .card {
          background-color: @white;
          .text {
@@ -425,9 +425,12 @@ ul {
 // responsive media queries
 
 @media (min-width: 1801px) {
-   .flex-cell {
-      min-width: 25%;
-      flex: 1 1 25%;
+   .wrapper {
+      .box {
+         .content {
+            height: 600px;
+         }
+      }
    }
 
    .internal-wrapper {
