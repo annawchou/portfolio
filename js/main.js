@@ -1,5 +1,5 @@
 var videos = document.getElementsByTagName("video");
-var fraction = 0.8;
+var fraction = 0.2;
 
 Array.prototype.forEach.call(videos, function (v) {
     checkScroll(v);
