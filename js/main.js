@@ -12,7 +12,13 @@ function checkAll() {
 }
 
 function checkScroll(video) {
-    var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+    var box = video;
+    if (video.dataset && video.dataset.parent) {
+        for (var i=0; i<video.dataset.parent; i++){
+            box = box.parentNode;
+        }
+    }
+    var x = box.offsetLeft, y = box.offsetTop, w = box.offsetWidth, h = box.offsetHeight, r = x + w, //right
         b = y + h, //bottom
         visibleX, visibleY, visible;
 
