@@ -12,21 +12,43 @@ function checkAll() {
 }
 
 function checkScroll(video) {
-        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-            b = y + h, //bottom
-            visibleX, visibleY, visible;
+    var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+        b = y + h, //bottom
+        visibleX, visibleY, visible;
 
-        visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-        visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+    visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+    visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
 
-        visible = visibleX * visibleY / (w * h);
+    visible = visibleX * visibleY / (w * h);
 
-        if (visible > fraction) {
-            video.play();
-        } else {
-            video.pause();
-        }
+    if (visible > fraction) {
+        video.play();
+    } else {
+        video.pause();
+    }
 }
 
-window.addEventListener('scroll', checkAll, false);
-window.addEventListener('resize', checkAll, false);
+function throttle(fn, threshold, scope) {
+    threshold || (threshold = 150);
+    var last,
+        deferTimer;
+    return function () {
+        var context = scope || this;
+
+        var now = +new Date,
+            args = arguments;
+        if (last && now < last + threshold) {
+            clearTimeout(deferTimer);
+            deferTimer = setTimeout(function () {
+                last = now;
+                fn.apply(context, args);
+            }, threshold);
+        } else {
+            last = now;
+            fn.apply(context, args);
+        }
+    };
+}
+
+window.addEventListener('scroll', throttle(checkAll), false);
+window.addEventListener('resize', throttle(checkAll), false);
