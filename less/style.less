@@ -21,9 +21,24 @@
 @title-size: 16px;
 @caption-size: @body-size;
 
+@background-gray: #F2F2F2;
+@background-white: #FFFFFF;
+
 
 @fontfamily: 'Montserrat', sans-serif;
 @fontfamily2: 'Roboto', sans-serif;
+
+@breakpoint-mobile: ~"(max-width: 500px)";
+
+
+.section-padding() {
+  padding: 60px 0;
+
+  @media (max-width: 450px) {
+    padding: 40px 0;
+  }
+}
+
 
 * {
    font-family: @fontfamily;
@@ -63,6 +78,162 @@ p {
    font-size: 14px;
    text-align: center;
 }
+/* New template CSS */
+
+.main-wrapper {
+  width: 100%;
+
+  .section:nth-child(even) {
+    background: @background-gray;
+  }
+
+  .section:nth-child(odd) {
+    background: @background-white;
+  }
+
+  .section {
+    .section-padding;
+
+    &-text {
+      max-width: 500px;
+      margin: 0 auto;
+
+      @media screen and (max-width: 450px) {
+        padding: 0 25px;
+      }
+
+      .aspiration {
+        text-align: center;
+      }
+
+      p {
+        font-family: @fontfamily;
+        font-size: 20px;
+        text-align: left;
+
+        @media screen and (max-width: 450px) {
+          font-size: 16px;
+        }
+      }
+
+      h1 {
+        margin: 0;
+        font-size: 32px;
+        @media screen and (max-width: 450px) {
+          font-size: 25px;
+        }
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+    }
+
+    .wide-content {
+      z-index: 1;
+      padding-top: 60px;    
+      max-width: 800px;
+      margin: 0 auto;
+
+      @media screen and (min-width: 800px) {
+        &.double-image {
+          display: flex;
+          align-items: flex-start;
+
+          .image-container {
+            flex: 50%;
+            width: 50%;
+            max-width: unset;
+            
+            box-sizing: border-box;
+
+            img {
+              width: 100%;
+            }
+
+            &:nth-child(1) {
+              padding-right: 10px;
+            }
+            &:nth-child(2) {
+              padding-left: 10px;
+            }
+          }
+
+          @media screen and (max-width: 800px) {
+            max-width: 100%;
+          }
+        }
+      }
+
+      @media screen and (max-width: 800px) {
+        max-width: 100%;
+        padding-top: 14px;
+
+        &.double-image {
+          img {
+            padding-bottom: 14px;
+          }
+        }
+      }
+
+      img {
+        max-width: 800px;
+        margin: 0 auto;
+        display: block;
+
+        @media screen and (max-width: 800px) {
+          max-width: 100%;
+        }
+
+        @media screen and (max-width: 450px) {
+          padding: 0 25px;
+          box-sizing: border-box;    
+        }
+      }
+    }
+
+    .caption {
+      text-align: center;
+      padding: 20px;
+      line-height: 26px;
+
+      @media screen and (max-width: 450px) {
+        padding: 5px 25px 40px 25px;
+      }
+    }
+
+    .quote {
+      text-align: center;
+      font-size: 32px;
+      line-height: 45px;
+      padding: 30px 0;
+
+      &-line {
+        width: 30px;
+        margin: 0 auto;
+
+        &.top {
+          padding-bottom: 35px;
+          border-top: 1px solid black;
+        }
+
+        &.bottom {
+          padding-top: 35px;
+          border-bottom: 1px solid black;
+        }
+      }
+
+      @media screen and (max-width: 450px) {
+        font-size: 22px;
+        line-height: 26px;
+        padding: 30px 25px;
+        box-sizing: border-box;      
+      }
+    }
+  }
+}
+
+/* end new template CSS */
 
 .iama {
     font-size: 40px;
