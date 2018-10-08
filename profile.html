@@ -14,6 +14,7 @@
         </script>
     </head>
 
+    <body>
         <div class="top-nav">
             <div class="nav-wrapper">
                 <a href="index.html"><h1>anna chou</h1></a>
@@ -23,99 +24,26 @@
                 </ul>
             </div>
         </div>
+        <div class="main-wrapper">
+            <div class="profile-page">
+                <div class="profile-image">
+                    <img src="./images/profile/anna-profile.png" />
+                </div>
 
-    <body>
-        <div class="internal-wrapper">
-            <div class="iamawrap">
-                <p class="iama">I am a <span id="iama"></span></p>
-            </div>
-             <div class="link">
-                <a class="buttons" href="./images/annaChou_resume.pdf" target='_blank'>Resume</a>
-                <a class="buttons" href="https://www.github.com/annawchou" target='_blank'>GitHub</a>
-                <a class="buttons" href="https://www.linkedin.com/in/annanapup" target='_blank'>Linkedin</a>
-            </div>
-        </div>
-        <div class="wrap">
-            <div class="container">
-            <img class="responsive-image" src="./images/resume.png" />
-<!--            <h3>About Me</h3>
-                <p class="profile">My current role is senior product designer at Yahoo.</p>
-                <p class="profile">I rely heavily around the ability to creatively solve problems, execute, and design for user intuition and user emotion. Working closely with engineering, user researchers, and data scientists is a crucial factor to the success of the product as well as understanding metrics and data revolving user behavior and user feedback.</p>
+                <div class="profile-text">
+                    Hi, I'm Anna. I was born and raised in Silicon Valley. Currently designing for simple, functional, and accessible end-to-end experiences at Dropbox.
+                </div>
+                <h1>Experience</h1>
+                <h2>Product Designer @ Dropbox</h2>
+                <p>Joined a new team called Ecosystems to work with research to define the user problems and validate hypotheses around user journey when using Dropbox and relevant common tools and workflows.</p>
+                <h2>Sr. UX Designer @ Yahoo Finance</h2>
+                <p>Lead product and visual designer for the Yahoo Finance iPhone, iPad and Android experiences.</p>
+                <h2>UX Designer @ Yahoo</h2>
+                <p>Lead designer for Yahoo Recommends, a dashboard and monitoring system for machine learning advertisement experiments for partners using Yahoo’s ad technology recommendation.</p>
 
-                <h3>Work Experience</h3>
-                <p class="job-title">Senior User Experience Designer @ Yahoo</p>
-                <p class="profile">Lead mobile product designer for Yahoo Finance iOS and Android native experiences.</p>
-                
-                <p class="job-title">User Experience Designer @ Yahoo</p>
-                <p class="profile">Lead design architect and visual designer for Yahoo Recommends desktop
-                experience, a publishing tool used by editors and content providers</p>
-
-                <p class="job-title">Design Intern @ BrewLife</p>
-                <p class="profile">Designed and implemented the main site using HTML, CSS, PHP, and JS as well
-                as defining/designing the company brand for several of their business systems.</p>
-
-                <p class="job-title">Design and Teaching assistant @ CCA</p>
-                <p class="profile">Taught students HTML, CSS, PHP, how to use WordPress, and prototyping with Axure.</p>
-
-                <h3>Education</h3>
-                <p class="job-title">California College of the Arts</p>
-                <p class="profile">BFA Graphic Design</p> -->
+                <p><a href="./images/annaChou_resume.pdf" class="resume-link">For more detail, view my resume.</a></p>
+                <button onclick="window.open('https://www.linkedin.com/in/annanapup/')" type="button">Let's connect</button>
             </div>
         </div>
-
-    <script type="text/javascript">
-    var strings = [
-        'product designer',
-        'user researcher',
-        'web developer',
-        'rapid prototyper',
-        'mobile designer',
-        'user advocate'
-    ];
-
-    var titleElement = document.getElementById('iama');
-    var typeRate = 100;
-    var deleteRate = 50;
-    var holdRate = 1000;
-
-    var currentString = 0;
-    var currentIndex = 0;
-    var states = {
-        typing:  {rate: 100},
-        holding: {rate: 1000},
-        deleting: {rate: 50}
-    };
-    var currentState = states.typing;
-
-    function getContent(text) {
-        return '<span class="iamaText">' + text + '</span>_';
-    }
-
-    function next() {
-        if (currentState === states.typing) {
-            titleElement.innerHTML = getContent(strings[currentString].substr(0, currentIndex + 1));
-            currentIndex++;
-            if (currentIndex === strings[currentString].length) {
-                currentState = states.holding;
-            }
-        } else if (currentState === states.deleting) {
-            titleElement.innerHTML = getContent(strings[currentString].substr(0, currentIndex + 1));
-            currentIndex--;
-            if (currentIndex === -1) {
-                currentString++;
-                if (currentString === strings.length) {
-                    currentString = 0;
-                }
-                currentState = states.typing;
-            }
-        } else if (currentState === states.holding) {
-            currentState = states.deleting;
-        }
-
-        setTimeout(next, currentState.rate);
-    }
-
-    next();
-    </script>
     </body>
 </html>
