@@ -6,6 +6,6 @@
 
 ## How to compile Less to CSS
 
-`npm install -g lessc`
+`sudo npm install -g less`
 
 `lessc ./less/style.less ./css/style.css --compress`
