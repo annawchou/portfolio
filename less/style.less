@@ -129,6 +129,7 @@ p {
     }
 
     /* controls section text blocks */
+    
     &-text {
       max-width: @section-text-width;
       margin: 0 auto;
@@ -233,9 +234,11 @@ p {
 
       @media @less-than-800 {
         max-width: 100%;
-        padding-top: 14px;
+        padding-top: 0px;
 
-        &.double-image {
+        &.double-image, &.triple-image {
+          padding-top: 0px;
+
           img {
             padding-bottom: 14px;
           }
@@ -263,6 +266,12 @@ p {
       padding: 20px;
       line-height: @text-line-height;
       font-family: @fontfamily2;
+
+      .header {
+        font-weight: @super-bold-weight;
+        font-family: @fontfamily2;
+        padding-bottom: 8px;
+      }
 
       @media @mobile {
         padding: 5px 25px 40px 25px;
