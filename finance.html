@@ -14,84 +14,365 @@
         </script>
         <script src="js/main.js" async></script>
     </head>
-
+    <body>
         <div class="top-nav">
             <div class="nav-wrapper">
                 <a href="index.html"><h1>anna chou</h1></a>
                 <ul>
-                    <a class="activeState" href="index.html"><li><div>work</div></li></a>
+                    <a class="activeState" href="index.html"><li><div>Work</div></li></a>
                     <a href="profile.html"><li><div>Profile</div></li></a>
                 </ul>
-                <div class="previousnext">
-                    <a class="previous" href="charts.html"><img src="./images/arrow-right.png" width="28px"/></a>
-                    <a class="next" href="fresh.html"><img src="./images/arrow-left.png" width="28px"/></a>
-                </div>
             </div>
         </div>
 
-    <body>
-        <img class="responsive-image space" src="./images/finance/finance-logo2.png" />
-        <span><video playsinline class="responsive-image space" width="100%" autoplay loop src="./images/finance/live-header-1.mp4" muted></video></span>
-        <span><video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/live-header-3.mp4" muted></video></span>
 
-        <div class="internal-wrapper">
-            <img class="responsive-image" src="./images/finance/product-goals.png"/>
+        <div class="main-wrapper">
+            <div class="section">
+                <div class="section-wide-content">
+                    <img src="./images/finance/finance-logo.png">
+                </div>
+                <div class="section-text">
+                    <h1 class="aspiration title">Re-imagining the watchlist experience</h1>
+                    <p class="aspiration">Our mission is to enable users to make informed and educated financial decisions. Users from around the world come to Yahoo Finance to consume our news and get updates on the stock market. Our goal is to provide these users with live, accurate content and with the utility they need to get informed.</p>
+                </div>
+            </div>
 
-            <h1 class="clear">Understanding app architecture</h1>
-            <p>Laying out what users are seeing today as a holistic system and figuring out ways to improve experience.</p>
-            <img class="responsive-image" src="./images/finance/finance-architecture.png"/>
-            <h1>Framing the problems</h1>
-            <p>Understanding who our users are and what problems we should be solving for them.</p>
-            <img class="responsive-image" src="./images/finance/whiteboard.png"/>
-            <img class="responsive-image" src="./images/finance/whiteboard2.png"/>
-            <img class="responsive-image" src="./images/finance/whiteboard3.jpg"/>
-<!--             <img class="responsive-image" src="./images/finance/whiteboard4.jpg"/> -->
+            <div class="section">
+                <div class="section-text">
+                    <h1>My role</h1>
+                    <p>Yahoo Finance, one of the oldest and most successful verticals at Yahoo, has been established for over 20 years. Coming into the product, I was able to work with existing data and a consistent user base.</p>
+                    <p>As one of the lead product designers, I was tasked to reimagine the entire watchlist experience in collaboration with two other product designers. I also worked alongside with a researcher, data scientist, two product managers, and the iOS and android engineering teams.</p>
+                    <p>The new experience was launched in Q3 of 2017.</p>
+                    <br/ >
+                </div>
+                <span>
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/taj-mahal/taj-mahal-header.mp4" muted></video>
+                </span>
+                <div class="mini-caption">
+                The iPhone, Android, and iPad experience launched in Q3 of 2017.
+                </div>
+            </div>
 
-            <h1>Devising solutions for each feature</h1>
-            <p>We explored different UI approaches for how users would access their holdings view.</p>
-            <img class="responsive-image" src="./images/finance/wireframe2.png"/>
-            <p>The ability to add a new lot or edit an existing lot was a new feature since we added the holdings view.</p>
-            <img class="responsive-image" src="./images/finance/wireframe3.png"/>
+            <div class="section">
+                <div class="section-text">
+                    <h1>What value is there to redesign something that already works?</h1>
+                    <p>Within the iOS and android experiences, one of the biggest utilities that users saw value in was the ability to customize their watchlist. However, the experience only allowed users to have one watchlist. Research showed that users can have over 100 symbols in their watchlist.</p>
+                    <p>When digging further into why users would have so many, we learned that users thought about their symbols in two ways:</p>
+                </div>
 
-<!--        <h1>Dogfood versioning &#38; Bucket testing</h1>
-            <p>We did multiple a/b testing with different designs - using metrics to help validate our directions.</p>
-            <img class="responsive-image" src="./images/finance/bucket-1.png"/>
-            <img class="responsive-image" src="./images/finance/bucket-2.png"/> -->
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/usage.png" />
+                        <div class="caption">
+                        <div class="header">Account</div>
+                        Stocks based on accounts
+                        </div>
+                    </div>
 
-            <h1>High-fidelity &#38; Prototyping</h1>
-            <p>Illustrating the approaches through visual design &#38; rapid prototyping.</p>
-            <img class="responsive-image" src="./images/finance/sketch.png"/>
-            <img class="responsive-image" src="./images/finance/prototype.png"/>
+                    <div class="double-image-container">
+                        <img src="./images/finance/category.png" />
+                        <div class="caption">
+                        <div class="header">Category</div>
+                        Stocks that belong to a category
+                        </div>
+                    </div>
+                </div>
 
-            <h1>User Research &#38; Iterating</h1>
-            <p><strong class="feature">Feature Request:</strong> Users wanted the ability to add multiple lists and holdings.<br /><strong class="solution">Solution:</strong> We added a holdings view and a multiple watchlist view.</p>
-            <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/study1.mp4" muted></video>
-            <p><strong class="problem">Problem:</strong> Then users were not able to find the holdings view because the toggle was too small. <br /><strong class="solution">Solution:</strong> We changed the label to "Basic" and "Details" and made the toggle larger.</p>
-            <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/study2.mp4" muted></video>
-            <p><strong class="feature">Feature Request:</strong> Users wanted to be able to see more market indicies while researching other quotes.<br /><strong class="solution">Solution:</strong> Our team did a hack-a-thon to introduce a market index carousel in the header.</p>
-            <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/study4.mp4" muted></video>
-            <p><strong class="feature">Feature Request:</strong> We wanted users to stay engaged longer on our article pages.<br /><strong class="solution">Solution:</strong> We updated video to have picture-in-picture.</p>
-            <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/study3.mp4" muted></video>
+                <br /><br /><br /><br /><br />
 
-            <h1>Exhausting all ways of user researching</h1>
-            <p>Together as a team we were able to list out common themes by gathering data through surveys, beta testing, diary studies, and interviewing.</p>
-            <img class="responsive-image" src="./images/finance/study.png"/>
+                <div class="section-text">
+                    <h2>So why is this a bad thing?</h2>
+                    <p>Users aren't getting their full value out of the experience because of two reasons:</p>
+                </div>
 
-            <h1>Implementation &#38; Specs</h1>
-            <img class="responsive-image" src="./images/finance/specs-2016-grid.png"/>
-            <img class="responsive-image" src="./images/finance/specs-stream.png"/>
-            <img class="responsive-image" src="./images/finance/specs-new-stream.png"/>
-            <img class="responsive-image" src="./images/finance/specs-hero.png"/>
-            <h1>Engineering, Design, &#38; Product source of truth</h1>
-            <p>For a project at this scale, organization and transparency is key to successful implementation.</p>
-            <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/zeplin1.mp4" muted></video>
 
-            <h1>The people behind Yahoo Finance</h1>
-            <img class="responsive-image" src="./images/finance/people-design.jpg"/>
-            <p>Sunnyvale</p>
-            <img class="responsive-image" src="./images/finance/people-snv.png"/>
-            <p>New York</p>
-            <img class="responsive-image" src="./images/finance/people-ny.png"/>
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/reorder.png" />
+                        <div class="caption">
+                        <div class="header">Constant reordering</div>
+                        Everytime a user adds a new symbol, they have to reorder it into the right section of their list.
+                        </div>
+                    </div>
+
+                    <div class="double-image-container">
+                        <video playsinline width="100%" autoplay loop src="./images/finance/scrolling.mov" muted></video>
+                        <div class="caption">
+                        <div class="header">Endless scrolling</div>
+                        Because these lists were so long, users didn’t notice the news stream that was beneath their watchlist.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>The challenge</h1>
+                    <p>We see users following a lot of symbols with no way of organizing them.</p>
+                </div>
+
+                <div class="quote section-wide-content">
+                    <div class="quote-line top"></div>
+                        How might we allow users to better organize their stocks?
+                    <div class="quote-line bottom"></div>
+                </div>
+
+                <div class="section-text">
+                    <h2>The opportunity</h2>
+                    <p>We want to allow the creation of multiple watchlists. Based on this goal, we wanted the design to solve for 3 things</p>
+                </div>
+
+                <div class="section-text">  
+                    <ul class="list">
+                        <li>Enable users to organize symbols into multiple lists</li>
+                        <li>Allow users to monitor multiple lists at a glance</li>
+                        <li>Increase visibility of personalized news stream</li>
+                    </ul>
+                </div>
+
+                <div class="section-wide-content">
+                    <span>
+                    <video playsinline width="100%" autoplay loop src="./images/finance/multilist.mov" muted></video>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Designing for multiple watchlists</h1>
+                    <p>Keeping to our goals of enabling users to create unlimited amount of lists, we had to first tackle how the user might discover this new functionality.</p>
+                </div>
+
+                <div class="section-wide-content">
+                    <img src="./images/finance/whiteboard-compile.png">
+                </div> 
+            </div>
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>The entry point</h1>
+                    <p>Without distrupting the current experience, we didn't want to radically revamp the home experience which contained the watchlist. So we designed the experience to simply provide users an entry point into creating new lists using an arrow indicator.</p>
+                </div>
+
+                <div class="section-text">
+                    <p>We ran an A/B test with 4 buckets, including the control.</p>
+                </div>
+
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/control.png" />
+                        <div class="caption">Control</div>
+                    </div>
+                    <div class="double-image-container">
+                        <img src="./images/finance/caret-1.png" />
+                        <div class="caption">Exploration 1</div>
+                    </div>
+                </div>
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/caret-2.png" />
+                        <div class="caption">Exploration 2</div>
+                    </div>
+                    <div class="double-image-container">
+                        <img src="./images/finance/caret-3.png" />
+                        <div class="caption">Exploration 3</div>
+                    </div>
+                </div><!-- end triple-image container -->
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Things didn't go as expected</h1>
+                    <p>When we ran the bucket testing. We learned that they all performed poorly due to discoverability. We realized that if we really wanted to encourage users to organize their lists efficiently and provide better personalized news for the symbols they follow, we had to turn this into a much larger effort.</p>
+                </div>
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Back to the drawing board</h1>
+                    <p>I started exploring down the direction of visibly showing the ability to create new lists and surfacing their lists in a glance on the Home screen directly.</p>
+                </div>
+
+                <div class="section-wide-content triple-image">
+                    <div class="triple-image-container">
+                        <img src="./images/finance/exploration-1.png" />
+                        <div class="caption">
+                        Swiping between lists</div>
+                    </div>
+                    <div class="triple-image-container">
+                        <img src="./images/finance/exploration-2.png" />
+                        <div class="caption">
+                        Shuffling between lists</div>
+                    </div>
+                    <div class="triple-image-container">
+                        <img src="./images/finance/exploration-3.png" />
+                        <div class="caption">
+                        Horizontal navigation</div>
+                    </div>
+                </div>
+            </div><!-- end section class -->
+
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Research insights</h1>
+                    <p>We spoke with over 20 participants in the research labs to test in detail how users can intuitively create more watchlists and organize their symbols.</p>
+                </div>
+
+                <div class="section-wide-content">
+                    <img src="./images/finance/research.png">
+                </div> 
+
+                <br /><br /><br /><br />
+
+                <div class="section-text">
+                    <h2>How users were adding symbols today</h2>
+                    <p>We wanted to understand specifically when and where users decided to follow a symbol. This would help us to understand when we would surface the creation of lists.</p>
+                </div>
+
+                <div class="full-bleed">
+                    <img src="./images/finance/user-journey.png">
+                </div> 
+              <div class="mini-caption">
+                Flow that illustrates when users were adding symbols to their watchlist
+                </div>
+
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h2>The list of lists</h2>
+                    <p>We distilled the design direction into what we would ultimately call the list of lists.</p>
+                </div>
+
+                <div class="section-wide-content">
+                    <img src="./images/finance/list-of-lists.png">
+                </div> 
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Surfacing the right data</h1>
+                    <p>To bring impact and value through the list of lists, it all came down to the data we surface in this experience. Because we were exposing a level up, the data that users cared about at the symbol level was completely different than from the list level.</p>
+                </div>
+
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/data-1.png" />
+                        <div class="caption">
+                        Surfacing the # of symbols
+                        </div>
+                    </div>
+
+                    <div class="double-image-container">
+                        <img src="./images/finance/data-2.png" />
+                        <div class="caption">
+                        Surfacing the cash value of lists
+                        </div>
+                    </div>
+                </div>
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>The performance module</h1>
+                    <p>Because we're introducing a redesigned home tab that would surface the list of lists, it was also important to provide users the ability to view their total performance data for all their lists.</p>
+                </div>
+
+                <div class="section-wide-content double-image">
+                    <div class="double-image-container">
+                        <img src="./images/finance/performance-module.png" />
+                        <div class="caption">
+                        Surfacing the performance module above the list of lists.
+                        </div>
+                    </div>
+
+                    <div class="double-image-container">
+                        <img src="./images/finance/ios-module.png" />
+                        <div class="caption">
+                        Scaling the module into the iOS tray to easily glance and for easy access.
+                        </div>
+                    </div>
+                </div>
+                <div class="mini-caption">
+                    I wish this was my watchlist :(
+                </div>
+
+            </div><!-- end section class -->
+
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>"But I still want to see my symbols easily"</h1>
+                    <p>Unlike the original watchlist experience, with the new list of lists approach, users now felt it was troublesome to now tap into each list to see symbols. They also couldn't see the list immediately when launching the app or keep it open by default.</p>
+                </div>
+
+                <br /><br />
+
+                <div class="section-text">
+                    <h2>Introducing the accordion</h2>
+                    <p>In order to bring the best of both worlds, allowing users to organize and view their lists easily but without sacrificing the value of the old watchlist experience, I proposed to integrate the accordion interaction model into the user experience.</p>
+                </div>
+
+                <div class="section-wide-content">
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/taj-mahal/taj-mahal-front.mp4" muted></video>
+                </div> 
+
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>Designing for scale</h1>
+                    <p>Once we ended up with the list of lists, I also had to consider scaling this for iPad users, as a lot of Yahoo Finance users commonly use iPad as well. I explored using similiar list of lists concept for the phone to the iPad and also considered completely redesigning the experience differently to utilize the real estate more.</p>
+                </div>
+                <div class="section-wide-content">
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/taj-mahal/ipad-exploration-1.mp4" muted></video>
+                </div> 
+                <div class="section-wide-content">
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/taj-mahal/ipad-exploration-2.mp4" muted></video>
+                </div> 
+                <div class="mini-caption">
+                    iPad design exploration studies
+                </div>
+                <br /><br /><br />
+                <div class="section-text">
+                    <h2>The accordion couldn't scale</h2>
+                    <p>When I tried to apply the same design interaction model to the iPad, it broke. With the larger real estate of the iPad, the accordion took up too much space.</p>
+                </div>
+                <div class="section-wide-content">
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/accordion-ver.mov" muted></video>
+                </div> 
+                <br /><br /><br /><br />
+                <div class="section-text">
+                    <h2>Let's build a custom UI for the iPad</h2>
+                    <p>I went back to the drawing board to see if I could better utilize the space specifically for iPad users. I took inspiration from the iMessage Apple app and applied that principle to this new design direction. iPad users are already familiar with the left side navigation, why not use this to enable users to easily navigate between their lists?</p>
+                </div>
+                <div class="section-wide-content">
+                    <video playsinline class="responsive-image" width="100%" autoplay loop src="./images/finance/imessage.mov" muted></video>
+                </div> 
+
+            </div><!-- end section class -->
+
+            <div class="section">
+                <div class="section-text">
+                    <h1>The launch</h1>
+                    <p>We launched the new watchlist experience in Q3 of 2017. Revenue increased by 27% in the first month. The more watchlists people created, the more personalized news was created. And the more news was created, the more ads were surfaced.</p>
+                </div>
+
+                <div class="section-wide-content">
+                    <img src="./images/finance/monetization.png">
+                </div>
+            </div><!-- end section class -->
+
+
+            <div class="section">
+                <div class="section-text">
+                    <p><a href="explore.html">Next Project: Yahoo Finance Explore</a></p>
+                </div>
+            </div><!-- end section class -->
+
         </div>
     </body>
 </html>

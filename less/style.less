@@ -1,5 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,400italic,300italic,500,500italic,700,700italic,900);
+@import url('https://fonts.googleapis.com/css?family=Oswald');
 
 /* colors */
 
@@ -37,10 +36,11 @@
 
 /* fonts */
 
-@fontfamily: 'Montserrat', sans-serif;
-@fontfamily2: 'Roboto', sans-serif;
+@fontfamily: 'Oswald', sans-serif;
+@fontfamily2: 'SF Compact Text', sans-serif;
 
-@text-line-height: 26px;
+@text-line-height: 32px;
+@text-line-height-caption: 28px;
 
 @h1-font-size: 32px;
 @h1-font-size-mobile: 26px;
@@ -48,7 +48,7 @@
 @section-text-width: 500px;
 
 * {
-   font-family: @fontfamily;
+   font-family: @fontfamily2;
 }
 
 body {
@@ -59,9 +59,13 @@ body {
    color: @body-text;
 }
 
+
 h2 {
-   padding: 5px;
-   font-size: 40px;
+    font-size: 27px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: @fontfamily;
 }
 
 h3 {
@@ -82,17 +86,22 @@ h4 {
 
 p {
    font-family: @fontfamily2;
-   font-size: 14px;
+   font-size: 20px;
    text-align: center;
+}
+
+.highlight {
+  width: 700px;
+  margin: 0 auto;
 }
 
 /* New template CSS */
 
 .section-padding() {
-  padding: 60px 0;
+  padding: 200px 0;
 
   @media @mobile {
-    padding: 40px 0;
+    padding: 100px 0;
   }
 }
 
@@ -103,7 +112,8 @@ p {
   line-height: @text-line-height;
 
   @media @mobile {
-    font-size: 16px;
+    font-size: 17px;
+    line-height: 28px;
   }
 }
 
@@ -111,6 +121,15 @@ p {
   width: 33.33%;
   width: ~"calc(100% / 3)";
 }
+
+.full-bleed {
+    max-width: 100%;
+    padding-top: 40px;
+  }
+
+  img {
+    max-width: 100%
+  }
 
 .main-wrapper {
   width: 100%;
@@ -133,21 +152,39 @@ p {
       max-width: @section-text-width;
       margin: 0 auto;
 
+
       @media @mobile {
         padding: 0 25px;
       }
 
       .aspiration {
         text-align: center;
+        padding-bottom: 20px;
       }
+
 
       p {
         .paragraph-styles;
       }
 
+      .title {
+        text-transform: uppercase;
+        font-size: 50px;
+        color: #000;
+        line-height: 67px;
+        font-family: oswald;
+        font-weight: 400;
+        letter-spacing: 1px;
+        padding-bottom: 20px;
+      }
+
       h1 {
         margin: 0;
         font-size: @h1-font-size;
+        text-transform: uppercase;
+        font-family: @fontfamily;
+        letter-spacing: 2px;
+        color: #000;
 
         @media @mobile {
           font-size: @h1-font-size-mobile;
@@ -160,17 +197,17 @@ p {
         margin-left: 20px;
 
         li {
-          font-size: 18px;
+          font-size: 20px;
           display: list-item;
           text-transform: initial;
           letter-spacing: initial;
-          line-height: initial;
-          padding: 12px;
+          line-height: @text-line-height;
+          padding: 5px;
           font-family: @fontfamily2;
         }
 
-        padding-bottom: 60px;
-        padding-top: 20px;
+        padding-bottom: 40px;
+        padding-top: 10px;
 
         @media @mobile {
           padding-bottom: 40px;
@@ -181,7 +218,7 @@ p {
 
     &-wide-content {
       z-index: 1;
-      padding-top: 60px;    
+      padding-top: 30px;
       max-width: 800px;
       margin: 0 auto;
 
@@ -258,22 +295,46 @@ p {
       }
     }
 
+      .mini-caption {
+        font-size: 14px;
+        line-height: 16px;
+        font-style: italic;
+        margin: 0 auto;
+        text-align: center;
+        padding: 20px 25px;
+      }
+
     .caption {
       text-align: center;
       padding: 20px;
-      line-height: @text-line-height;
+      line-height: @text-line-height-caption;
       font-family: @fontfamily2;
+      max-width: @section-text-width;
+      margin: 0 auto;
+      font-size: 18px;
+
+      .header {
+        font-weight: 700;
+        font-size: 22px;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        color: #000;
+        font-family: @fontfamily;
+      }
 
       @media @mobile {
         padding: 5px 25px 40px 25px;
       }
     }
+  
 
     .quote {
       text-align: center;
       font-size: 32px;
       line-height: 45px;
-      padding: 30px 0;
+      padding: 50px 0;
+      font-family: @fontfamily2;
 
       &-line {
         width: 30px;
@@ -322,6 +383,7 @@ p {
     margin: 0 auto;
     display: block;
     margin-top: 70px;
+    width: 500px;
 
     @media @less-than-800 {
       font-size: 21px;
@@ -332,7 +394,7 @@ p {
   }
 
   .profile-page {
-    width: 500px;
+    width: 580px;
     margin: 0 auto;
 
     @media @less-than-800 {
@@ -344,8 +406,6 @@ p {
     h1 {
       margin: 80px 0 25px 0;
       font-size: 24px;
-      text-transform: uppercase;
-      letter-spacing: 0px;
 
       @media @mobile {
         font-size: 22px;
@@ -357,6 +417,9 @@ p {
       margin: 20px 0 10px 0;
       font-size: 18px;
       padding: 0;
+      font-family: @fontfamily2;
+      text-transform: capitalize;
+      letter-spacing: 0px;
 
       @media @mobile {
         font-size: 18px;
@@ -465,6 +528,7 @@ a {
     top: 0;
     width: 100%;
     height: 45px;
+    font-family: @fontfamily2;
     background-color: @white;
     padding: 0px 0px 0px 30px;
     z-index: 999;
@@ -475,7 +539,7 @@ a {
     line-height: 20px;
     h1 {
      text-transform: uppercase;
-     font-size: 14px;
+     font-size: 16px;
      width: 120px;
      float: left;
      margin: 0;
@@ -496,10 +560,10 @@ ul {
    float: left;
    li {
       display: inline;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       padding: 12px;
-      font-size: 14px;
-      letter-spacing: 0.5px;
+      font-size: 16px;
+      // letter-spacing: 0.5px;
       line-height: 45px;
       div {
          display: inline-block;
@@ -591,7 +655,7 @@ ul {
 }
 
 .taj-bg {
-    background-color: #EFF8FE;
+    background-color: #D1D3D5;
 }
 
 .recommends-bg {
@@ -647,7 +711,7 @@ ul {
          background-size: cover;
       }
       .taj-mahal {
-        background: url("./../images/taj-mahal/taj-mahal.png") no-repeat center;
+        background: url("./../images/dropbox/app-actions.gif") no-repeat center;
         background-size: contain;
         height: 100%;
       }
@@ -657,16 +721,16 @@ ul {
          .text {
             padding: 20px 25px 25px;
             project {   
-                font-family: roboto;
+                font-family: @fontfamily2;
                 font-weight: 500;
-                font-size: 18px;
+                font-size: 21px;
                 color: @label;
                 width: 100%;
                 display: block;
                 padding-bottom: 7px;
             }
             subcaption {
-               font-size: @caption-size;
+               font-size: 17px;
                width: 100%;
                color: @label;
             }
